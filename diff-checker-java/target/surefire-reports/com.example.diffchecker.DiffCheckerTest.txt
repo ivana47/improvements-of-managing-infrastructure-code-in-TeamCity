@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.example.diffchecker.DiffCheckerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.029 sec <<< FAILURE!
+com.example.diffchecker.DiffCheckerTest.testChangedFilesInBothBranches()  Time elapsed: 0.027 sec  <<< FAILURE!
+java.io.IOException: Cannot run program "merge-base": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at com.example.diffchecker.GitHelper.runGitCommand(GitHelper.java:31)
+	at com.example.diffchecker.GitHelper.getMergeBase(GitHelper.java:16)
+	at com.example.diffchecker.DiffChecker.getFilesChangedInBothBranches(DiffChecker.java:16)
+	at com.example.diffchecker.DiffCheckerTest.testChangedFilesInBothBranches(DiffCheckerTest.java:17)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 23 more
+

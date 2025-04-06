@@ -1,0 +1,5 @@
+com/example/App.class
+com/example/diffchecker/model/ChangedFile.class
+com/example/diffchecker/GitHelper.class
+com/example/diffchecker/DiffChecker.class
+com/example/diffchecker/GitHubHelper.class
